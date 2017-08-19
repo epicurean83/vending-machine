@@ -1,0 +1,13 @@
+.console-list {
+    height: 100px;
+    padding: 5px;
+    overflow: scroll;
+}
+
+.console-row {
+    padding: 5px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 15px;
+    color: #fff;
+}

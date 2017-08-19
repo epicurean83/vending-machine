@@ -1,0 +1,25 @@
+.display-wrap,
+.action-wrap,
+.console-wrap {
+    position: relative;
+    margin: 0 auto 10px auto;
+    width: 400px;
+}
+
+.display-wrap {
+    height: 200px;
+    padding: 20px 0 15px 0;
+    background-color: #5EAADA
+}
+
+.action-wrap {
+    height: 230px;
+    position: relative;
+    background-color: #ccc;
+}
+
+.console-wrap {
+    padding: 10px 0;
+    background-color: #545454;
+    border-radius: 10px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Vending Machine</title>
+
+        <link rel="stylesheet" type="text/css" href="css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="css/layout.css"/>
+        <link rel="stylesheet" type="text/css" href="css/product.css"/>
+        <link rel="stylesheet" type="text/css" href="css/slot.css"/>
+        <link rel="stylesheet" type="text/css" href="css/wallet.css"/>
+        <link rel="stylesheet" type="text/css" href="css/console.css"/>
+    </head>
+    <body>
+        <div class="display-wrap">
+            <ul id="productList">
+            </ul>
+        </div>
+        <div class="action-wrap">
+            <div id="slot" class="slot">
+            </div>
+            <div id="wallet" class="wallet">
+            </div>
+        </div>
+        <div class="console-wrap">
+            <ul id="console" class="console-list">
+            </ul>
+        </div>
+        <script id="data" type="application/json">
+            [
+                {
+                    "id": 1,
+                    "name": "펩시",
+                    "price": 800
+                },
+                {
+                    "id": 2,
+                    "name": "V10",
+                    "price": 700
+                },
+                {
+                    "id": 3,
+                    "name": "환타",
+                    "price": 600
+                },
+                {
+                    "id": 4,
+                    "name": "식혜",
+                    "price": 500
+                },
+                {
+                    "id": 5,
+                    "name": "국물",
+                    "price": 400
+                },
+                {
+                    "id": 6,
+                    "name": "박카스",
+                    "price": 300
+                },
+                {
+                    "id": 7,
+                    "name": "맹물",
+                    "price": 200
+                },
+                {
+                    "id": 8,
+                    "name": "거름",
+                    "price": 100
+                }
+            ]
+        </script>
+        <script type="text/javascript" src="js/core.js"></script>
+        <script type="text/javascript" src="js/support.js"></script>
+        <script type="text/javascript" src="js/command-manager.js"></script>
+        <script type="text/javascript" src="js/command.js"></script>
+        <script type="text/javascript" src="js/commands/drop-money-command.js"></script>
+        <script type="text/javascript" src="js/commands/get-product-command.js"></script>
+        <script type="text/javascript" src="js/commands/insert-money-command.js"></script>
+        <script type="text/javascript" src="js/commands/return-money-command.js"></script>
+        <script type="text/javascript" src="js/commands/select-product-command.js"></script>
+        <script type="text/javascript" src="js/console.js"></script>
+        <script type="text/javascript" src="js/view.js"></script>
+        <script type="text/javascript" src="js/views/product-view.js"></script>
+        <script type="text/javascript" src="js/views/slot-view.js"></script>
+        <script type="text/javascript" src="js/views/wallet-view.js"></script>
+        <script type="text/javascript" src="js/vending-machine.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+.product {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+.product-img {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    color: #CCC;
+    font-size: 30px;
+    line-height: 80px;
+    text-align: center;
+    background-color: #888672;
+}
+
+/* before peudo를 이용한 content 표시 */
+.product-img::after {
+    content: attr(data-left);
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+    line-height: 10px;
+}
+
+.product-price {
+    display: block;
+    width: 100px;
+    height: 20px;
+    color: #CCC;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.product-empty-mark {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 12px;
+    background-color: #A63737;
+    color: #fff;
+}
+
+.product-img.product-enable {
+    background-color: #CAC166;
+}
